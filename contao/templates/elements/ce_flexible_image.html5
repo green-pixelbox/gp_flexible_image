@@ -1,0 +1,46 @@
+<?php $this->extend('block_searchable'); ?>
+
+<?php $this->block('content'); ?>
+
+
+<?php if ($this->href): ?>
+    <a href="<?= $this->href ?>"<?php if ($this->linkTitle): ?> title="<?= $this->linkTitle ?>"<?php endif; ?><?= $this->attributes ?>>
+<?php endif; ?>
+
+    <figure class="image_container_flexible fi-<?= $this->id; ?>" style="<?php if ($this->margin): ?><?= $this->margin ?><?php endif; ?>">
+        <?php $this->insert('picture_default', $this->picture); ?>
+        <?php if ($this->caption): ?>
+            <figcaption class="caption"><?= $this->caption ?></figcaption>
+        <?php endif; ?>
+    </figure>
+
+<?php if ($this->href): ?>
+    </a>
+<?php endif; ?>
+
+
+<?php
+// define individual css
+$cssCode = "
+<style>
+    figure.image_container_flexible.fi-".$this->id."{
+        min-height: ".html_entity_decode($this->gpFlexibleImageHeightDesktop).";
+    }
+    @media (max-width: 992px) {
+        figure.image_container_flexible.fi-".$this->id."{
+            min-height: ". html_entity_decode($this->gpFlexibleImageHeightTablet).";
+        }
+    }
+    @media (max-width: 768px) {
+        figure.image_container_flexible.fi-".$this->id."{
+            min-height: ". html_entity_decode($this->gpFlexibleImageHeightMobile) .";
+        }
+    }
+</style>
+		";
+
+$GLOBALS['TL_HEAD'][] = $cssCode;
+?>
+
+
+<?php $this->endblock(); ?>

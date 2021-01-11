@@ -1,0 +1,39 @@
+<?xml version="1.0" ?><xliff version="1.1">
+    <file datatype="php" original="system/modules/gp_flexible_image/languages/en/tl_content.php" source-language="en" target-language="de">
+        <body>
+        <trans-unit id="tl_content.gpFlexibleImageHeightDesktop.0">
+            <source>Darstellung der Min-Bildhöhe in der Desktopansicht</source>
+            <target>Darstellung der Min-Bildhöhe in der Desktopansicht</target>
+        </trans-unit>
+        <trans-unit id="tl_content.gpFlexibleImageHeightDesktop.1">
+            <source>Bildschirmformat: 993px und grösser. Bitte die Einheit mit angeben (px, vh, ...). Ergibt die Höhe des umliegenden Containers - So hoch wird das Bild angezeigt.</source>
+            <target>Bildschirmformat: 993px und grösser. Bitte die Einheit mit angeben (px, vh, ...). Ergibt die Höhe des umliegenden Containers - So hoch wird das Bild angezeigt.</target>
+        </trans-unit>
+
+        <trans-unit id="tl_content.gpFlexibleImageHeightTablet.0">
+            <source>Darstellung der Min-Bildhöhe in der Tabletansicht</source>
+            <target>Darstellung der Min-Bildhöhe in der Tabletansicht</target>
+        </trans-unit>
+        <trans-unit id="tl_content.gpFlexibleImageHeightTablet.1">
+            <source>Bildschirmformat: 992px bis 769px. Bitte die Einheit mit angeben (px, vh, ...). Ergibt die Höhe des umliegenden Containers - So hoch wird das Bild angezeigt.</source>
+            <target>Bildschirmformat: 992px bis 769px. Bitte die Einheit mit angeben (px, vh, ...). Ergibt die Höhe des umliegenden Containers - So hoch wird das Bild angezeigt.</target>
+        </trans-unit>
+
+        <trans-unit id="tl_content.gpFlexibleImageHeightMobile.0">
+            <source>Darstellung der Min-Bildhöhe in der Mobileansicht</source>
+            <target>Darstellung der Min-Bildhöhe in der Mobileansicht</target>
+        </trans-unit>
+        <trans-unit id="tl_content.gpFlexibleImageHeightMobile.1">
+            <source>Bildschirmformat: 768px bis 0. Bitte die Einheit mit angeben (px, vh, ...). Ergibt die Höhe des umliegenden Containers - So hoch wird das Bild angezeigt.</source>
+            <target>Bildschirmformat: 768px bis 0. Bitte die Einheit mit angeben (px, vh, ...). Ergibt die Höhe des umliegenden Containers - So hoch wird das Bild angezeigt.</target>
+        </trans-unit>
+
+        <trans-unit id="tl_content.gpFlexibleImage_legend">
+          <source>Flexibles Bild und Einstellungen</source>
+          <target>Flexibles Bild und Einstellungen</target>
+        </trans-unit>
+        </body>
+    </file>
+</xliff>
+
+

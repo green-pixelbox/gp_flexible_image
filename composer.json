@@ -1,0 +1,39 @@
+{
+	"name":"green-pixelbox/gp_flexible_image",
+	"description":"Create flexible image element as content element",
+	"keywords":["contao","flexible","contentelements","image"],
+	"type":"contao-module",
+	"homepage":"http://www.green-pixelbox.de",
+	"license":"LGPL-3.0+",
+	"authors":[
+		{
+			"name":"Peter Friedhoff",
+			"email":"info@green-pixelbox.de",
+			"role":"Developer"
+		}
+	],
+	"support":{
+		"issues":"https://github.com/green-pixelbox/gp_flexible_image/issues",
+		"source":"https://github.com/green-pixelbox/gp_flexible_image"
+	},
+	"require":{
+		"php":">=7.2",
+		"contao/core-bundle": "^4.9"
+	},
+	"autoload": {
+	    "psr-4": {
+	      "greenpixelbox\\flexibleimage\\": "src/"
+	    }
+	  },
+	"replace":{
+		"contao-legacy/gp_flexible_image":"*"
+	},
+	"extra":{
+		"contao":{
+			"sources":{
+				"contao":"system/modules/gp_flexible_image"
+			}
+		}
+	},
+	"version": "0.1.1"
+}
