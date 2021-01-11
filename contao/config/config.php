@@ -1,14 +1,14 @@
 <?php
 
-/**
- * Parallax Image - Modul
+/*
+ * This file is part of gp_flexible_image.
  *
- * Copyright (C) 2016 Green Pixelbox
- *
- * @link    http://www.green-pixelbox.de
- * @license proprietary
+ * (c) Peter Friedhoff 2021 <info@green-pixelbox.de>
+ * @license GPL-3.0-or-later
+ * For the full copyright and license information,
+ * please view the LICENSE file that was distributed with this source code.
+ * @link https://github.com/green-pixelbox/gp_flexible_image
  */
-
 
 
 

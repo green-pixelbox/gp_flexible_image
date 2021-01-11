@@ -1,11 +1,13 @@
 <?php
 
-/**
- * Contao Open Source CMS
+/*
+ * This file is part of gp_flexible_image.
  *
- * Copyright (c) 2005-2017 Leo Feyer
- *
- * @license LGPL-3.0+
+ * (c) Peter Friedhoff 2021 <info@green-pixelbox.de>
+ * @license GPL-3.0-or-later
+ * For the full copyright and license information,
+ * please view the LICENSE file that was distributed with this source code.
+ * @link https://github.com/green-pixelbox/gp_flexible_image
  */
 
 
