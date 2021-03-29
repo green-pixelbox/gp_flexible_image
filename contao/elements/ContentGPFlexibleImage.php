@@ -3,14 +3,10 @@
 namespace greenpixelbox\flexibleimage;
 
 
-/*
- * This file is part of gp_flexible_image.
+/**
+ * Front end content element "image".
  *
- * (c) Peter Friedhoff 2021 <info@green-pixelbox.de>
- * @license GPL-3.0-or-later
- * For the full copyright and license information,
- * please view the LICENSE file that was distributed with this source code.
- * @link https://github.com/green-pixelbox/gp_flexible_image
+ * @author Leo Feyer <https://github.com/leofeyer>
  */
 class ContentGPFlexibleImage extends \ContentElement
 {
@@ -30,7 +26,7 @@ class ContentGPFlexibleImage extends \ContentElement
 	public function generate()
 	{
 		$GLOBALS['TL_CSS'][] = 'system/modules/gp_flexible_image/assets/css/frontend.css';
-//		$GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/gp_flexible_image/assets/js/effects.js';
+//		$GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/gp-flexible-image/assets/js/effects.js';
 		if ($this->singleSRC == '')
 		{
 			return '';

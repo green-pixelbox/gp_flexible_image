@@ -20,14 +20,6 @@
 		"php":">=7.2",
 		"contao/core-bundle": "^4.4"
 	},
-	"autoload": {
-	    "psr-4": {
-	      "greenpixelbox\\flexibleimage\\": "src/"
-	    }
-	  },
-	"replace":{
-		"contao-legacy/gp_flexible_image":"*"
-	},
 	"extra":{
 		"contao":{
 			"sources":{

@@ -12,7 +12,7 @@
 
 array_insert($GLOBALS['TL_DCA']['tl_content']['palettes'], sizeof($GLOBALS['TL_DCA']['tl_content']['palettes']), array
 (
-    'GPFlexibleImage'                       => '{type_legend},type,headline;{gpFlexibleImage_legend},singleSRC,gpFlexibleImageHeightDesktop,gpFlexibleImageHeightTablet,gpFlexibleImageHeightMobile,title,size,imagemargin,imageUrl,fullsize,caption;{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space;{invisible_legend:hide},invisible,start,stop'
+    'GPFlexibleImage'                       => '{type_legend},type,headline;{gpFlexibleImage_legend},singleSRC,gpFlexibleImageHeightDesktop,gpFlexibleImageHeightTablet,gpFlexibleImageHeightMobile,title,size,imagemargin,imageUrl,fullsize,caption,alt,imageTitle;{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space;{invisible_legend:hide},invisible,start,stop'
 ));
 
 

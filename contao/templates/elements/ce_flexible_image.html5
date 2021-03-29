@@ -9,13 +9,13 @@
 
     <figure class="image_container_flexible fi-<?= $this->id; ?>" style="<?php if ($this->margin): ?><?= $this->margin ?><?php endif; ?>">
         <?php $this->insert('picture_default', $this->picture); ?>
-        <?php if ($this->caption): ?>
-            <figcaption class="caption"><?= $this->caption ?></figcaption>
-        <?php endif; ?>
     </figure>
 
 <?php if ($this->href): ?>
     </a>
+<?php endif; ?>
+<?php if ($this->caption): ?>
+    <figcaption class="caption"><?= $this->caption ?></figcaption>
 <?php endif; ?>
 
 
