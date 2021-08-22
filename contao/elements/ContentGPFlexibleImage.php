@@ -25,7 +25,7 @@ class ContentGPFlexibleImage extends \ContentElement
 	 */
 	public function generate()
 	{
-		$GLOBALS['TL_CSS'][] = 'system/modules/gp_flexible_image/assets/css/frontend.css';
+		$GLOBALS['TL_CSS'][] = 'system/modules/gp_flexible_image/assets/css/flexible_image.css|static';
 //		$GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/gp-flexible-image/assets/js/effects.js';
 		if ($this->singleSRC == '')
 		{
