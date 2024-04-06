@@ -13,10 +13,12 @@
             Metadata::VALUE_TITLE => $this->imageTitle
         ]),
         'options' => ['attr' => ['class' => 'image_container_flexible fi-'.$this->id] ],
+        'enableLightbox' => true,
     ]) ?>
 <?php else: ?>
     <?= $this->figure($this->singleSRC, $this->size, [
         'options' => ['attr' => ['class' => 'image_container_flexible fi-'.$this->id] ],
+        'enableLightbox' => true,
     ]) ?>
 <?php endif; ?>
 
