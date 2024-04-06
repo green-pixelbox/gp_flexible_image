@@ -9,7 +9,7 @@ use Contao\System;
  * Contao Open Source CMS
  * Copyright (c) 2005-2015 Leo Feyer
  *
- * @package    flexibleImage Bundle
+ * @package    flexibleImage Bundle 2.0.0
  * @copyright  Peter Friedhoff 2024
  * @author     Peter Friedhoff <info@green-pixelbox.de>
  * @license    LGPL-3.0+
