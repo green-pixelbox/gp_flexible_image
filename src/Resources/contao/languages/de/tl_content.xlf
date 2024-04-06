@@ -32,6 +32,24 @@
           <source>Flexibles Bild und Einstellungen</source>
           <target>Flexibles Bild und Einstellungen</target>
         </trans-unit>
+
+        <trans-unit id="tl_content.gpFlexibleImageObjectPositionX.0">
+                    <source>Bild-Position x-Achse in %</source>
+                    <target>Bild-Position x-Achse in %</target>
+        </trans-unit>
+        <trans-unit id="tl_content.gpFlexibleImageObjectPositionX.1">
+                    <source>50 = mittig; 0 = linksbündig; 100 = rechtsbündig; </source>
+                    <target>50 = mittig; 0 = linksbündig; 100 = rechtsbündig; </target>
+        </trans-unit>
+
+        <trans-unit id="tl_content.gpFlexibleImageObjectPositionY.0">
+                    <source>Bild-Position y-Achse in %</source>
+                    <target>Bild-Position y-Achse in %</target>
+        </trans-unit>
+        <trans-unit id="tl_content.gpFlexibleImageObjectPositionY.1">
+                    <source>50 = mittig; 0 = oben; 100 = unten;</source>
+                    <target>50 = mittig; 0 = oben; 100 = unten;</target>
+        </trans-unit>
         </body>
     </file>
 </xliff>

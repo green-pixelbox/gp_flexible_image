@@ -12,20 +12,18 @@
 			"role":"Developer"
 		}
 	],
-	"support":{
-		"issues":"https://github.com/green-pixelbox/gp_flexible_image/issues",
-		"source":"https://github.com/green-pixelbox/gp_flexible_image"
-	},
 	"require":{
-		"php":">=7.2",
-		"contao/core-bundle": "^4.4"
+		"php":">=8.0",
+		"contao/core-bundle": "^4.13 || ^5.0"
 	},
-	"extra":{
-		"contao":{
-			"sources":{
-				"contao":"system/modules/gp_flexible_image"
-			}
+	"autoload": {
+		"psr-4": {
+			"GreenPixelbox\\GpFlexibleImage\\": "src/"
 		}
 	},
-	"version": "1.0.4"
+	"extra":{
+		"contao-manager-plugin": "GreenPixelbox\\GpFlexibleImage\\ContaoManager\\Plugin",
+		"contao-component-dir": "public"
+	},
+	"version": "2.0.2"
 }
