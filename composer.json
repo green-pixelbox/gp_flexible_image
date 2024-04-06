@@ -25,5 +25,5 @@
 		"contao-manager-plugin": "GreenPixelbox\\GpFlexibleImage\\ContaoManager\\Plugin",
 		"contao-component-dir": "public"
 	},
-	"version": "2.0.0"
+	"version": "2.0.1"
 }
