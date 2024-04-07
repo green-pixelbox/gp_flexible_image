@@ -59,6 +59,15 @@
                     <source>50 = mittig; 0 = oben; 100 = unten;</source>
                     <target>50 = mittig; 0 = oben; 100 = unten;</target>
         </trans-unit>
+
+        <trans-unit id="tl_content.gpOverwriteMeta.0">
+            <source>Metadaten überschreiben</source>
+            <target>Metadaten überschreiben</target>
+        </trans-unit>
+        <trans-unit id="tl_content.gpOverwriteMeta.1">
+            <source>Die Metadaten der Datei überschreiben.</source>
+            <target>Die Metadaten der Datei überschreiben.</target>
+        </trans-unit>
         </body>
     </file>
 </xliff>

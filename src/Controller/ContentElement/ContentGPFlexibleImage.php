@@ -30,6 +30,30 @@ class ContentGPFlexibleImage extends ContentElement
 	public function generate()
 	{
         $assetsDir = 'bundles/greenpixelboxflexibleimage';
+
+        // individual css
+        $cssCode = "
+                div.ce_GPFlexibleImage figure.image_container_flexible.fi-".$this->id."{
+                    min-height: ".html_entity_decode($this->gpFlexibleImageHeightDesktop).";
+                }
+                div.ce_GPFlexibleImage figure.image_container_flexible.fi-".$this->id." img{
+                    object-position: ".$this->gpFlexibleImageObjectPositionX."% ".$this->gpFlexibleImageObjectPositionY."%;
+                }    
+                
+                @media (max-width: 992px) {
+                    div.ce_GPFlexibleImage figure.image_container_flexible.fi-".$this->id."{
+                        min-height: ". html_entity_decode($this->gpFlexibleImageHeightTablet).";
+                    }
+                }
+                @media (max-width: 768px) {
+                    div.ce_GPFlexibleImage figure.image_container_flexible.fi-".$this->id."{
+                        min-height: ". html_entity_decode($this->gpFlexibleImageHeightMobile) .";
+                    }
+                }
+		";
+        file_put_contents($assetsDir . '/css/flexible_image_'.$this->id.'.css', $cssCode);
+
+
         // Backend User Frontend User abfragen anstatt TL_USER
         if (System::getContainer()->get('contao.routing.scope_matcher')
             ->isBackendRequest(System::getContainer()->get('request_stack')->getCurrentRequest() ?? Request::create(''))
@@ -37,6 +61,7 @@ class ContentGPFlexibleImage extends ContentElement
             // ist Backend User, mache ....
         }else{
             $GLOBALS['TL_CSS'][] = $assetsDir . '/css/flexible_image.css|static';
+            $GLOBALS['TL_CSS'][] = $assetsDir . '/css/flexible_image_'.$this->id.'.css|static';
         }
 
 		return parent::generate();

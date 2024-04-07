@@ -6,7 +6,7 @@
 
 <?php $newWindow = ($this->fullsize == 1) ? true : false; ?>
 
-<?php if ($this->overwriteMeta != ''): ?>
+<?php if ($this->gpOverwriteMeta == 1): ?>
     <?= $this->figure($this->singleSRC, $this->size, [
         'metadata' => new Metadata([
             Metadata::VALUE_ALT => $this->alt,
@@ -25,30 +25,9 @@
 <?php endif; ?>
 
 <?php
-// define individual css
-$cssCode = "
-<style>
-    div.ce_GPFlexibleImage figure.image_container_flexible.fi-".$this->id."{
-        min-height: ".html_entity_decode($this->gpFlexibleImageHeightDesktop).";
-    }
-    div.ce_GPFlexibleImage figure.image_container_flexible.fi-".$this->id." img{
-        object-position: ".$this->gpFlexibleImageObjectPositionX."% ".$this->gpFlexibleImageObjectPositionY."%;
-    }    
-    
-    @media (max-width: 992px) {
-        div.ce_GPFlexibleImage figure.image_container_flexible.fi-".$this->id."{
-            min-height: ". html_entity_decode($this->gpFlexibleImageHeightTablet).";
-        }
-    }
-    @media (max-width: 768px) {
-        div.ce_GPFlexibleImage figure.image_container_flexible.fi-".$this->id."{
-            min-height: ". html_entity_decode($this->gpFlexibleImageHeightMobile) .";
-        }
-    }
-</style>
-		";
 
-$GLOBALS['TL_HEAD'][] = $cssCode;
+
+//$GLOBALS['TL_HEAD'][] = $cssCode;
 ?>
 
 <script>
