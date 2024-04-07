@@ -10,14 +10,20 @@
  * @link https://github.com/green-pixelbox/gp_flexible_image
  */
 
-$GLOBALS['TL_DCA']['tl_content']['palettes']['GPFlexibleImage'] = '{type_legend},type,headline;{source_legend},singleSRC,size,fullsize,overwriteMeta,gpFlexibleImageHeightDesktop,gpFlexibleImageHeightTablet,gpFlexibleImageHeightMobile,gpFlexibleImageObjectPositionX,gpFlexibleImageObjectPositionY;{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},cssID;{invisible_legend:hide},invisible,start,stop';
+$GLOBALS['TL_DCA']['tl_content']['palettes']['GPFlexibleImage'] = '{type_legend},type,headline;{source_legend},singleSRC,size,fullsize,overwriteMeta,gpFlexibleImageWidthDesktop,gpFlexibleImageHeightDesktop,gpFlexibleImageHeightTablet,gpFlexibleImageHeightMobile,gpFlexibleImageObjectPositionX,gpFlexibleImageObjectPositionY;{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},cssID;{invisible_legend:hide},invisible,start,stop';
 
-
+$GLOBALS['TL_DCA']['tl_content']['fields']['gpFlexibleImageWidthDesktop'] = array
+(
+    'label'                   => &$GLOBALS['TL_LANG']['tl_content']['gpFlexibleImageWidthDesktop'],
+    'inputType'               => 'text',
+    'eval'                    => array('maxlength'=>255, 'tl_class'=>'w50 clr', 'mandatory'=>'true'),
+    'sql'                     => "varchar(255) NOT NULL default '100%'"
+);
 $GLOBALS['TL_DCA']['tl_content']['fields']['gpFlexibleImageHeightDesktop'] = array
 (
     'label'                   => &$GLOBALS['TL_LANG']['tl_content']['gpFlexibleImageHeightDesktop'],
     'inputType'               => 'text',
-    'eval'                    => array('maxlength'=>255, 'tl_class'=>'w50 clr', 'mandatory'=>'true'),
+    'eval'                    => array('maxlength'=>255, 'tl_class'=>'w50', 'mandatory'=>'true'),
     'sql'                     => "varchar(255) NOT NULL default '500px'"
 );
 $GLOBALS['TL_DCA']['tl_content']['fields']['gpFlexibleImageHeightTablet'] = array

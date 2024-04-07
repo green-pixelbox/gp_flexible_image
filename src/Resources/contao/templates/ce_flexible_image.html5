@@ -4,6 +4,8 @@
 
 <?php $this->block('content'); ?>
 
+<?php $newWindow = ($this->fullsize == 1) ? true : false; ?>
+
 <?php if ($this->overwriteMeta != ''): ?>
     <?= $this->figure($this->singleSRC, $this->size, [
         'metadata' => new Metadata([
@@ -13,12 +15,12 @@
             Metadata::VALUE_TITLE => $this->imageTitle
         ]),
         'options' => ['attr' => ['class' => 'image_container_flexible fi-'.$this->id] ],
-        'enableLightbox' => true,
+        'enableLightbox' => $newWindow,
     ]) ?>
 <?php else: ?>
     <?= $this->figure($this->singleSRC, $this->size, [
         'options' => ['attr' => ['class' => 'image_container_flexible fi-'.$this->id] ],
-        'enableLightbox' => true,
+        'enableLightbox' => $newWindow,
     ]) ?>
 <?php endif; ?>
 
@@ -49,5 +51,12 @@ $cssCode = "
 $GLOBALS['TL_HEAD'][] = $cssCode;
 ?>
 
+<script>
+    var childElement = document.querySelector('div.ce_GPFlexibleImage figure.image_container_flexible.fi-<?php echo $this->id ?>');
+    if (childElement) {
+        var parentElement = childElement.parentElement;
+        parentElement.style.width = '<?php echo html_entity_decode($this->gpFlexibleImageWidthDesktop) ?>';
+    }
+</script>
 
 <?php $this->endblock(); ?>
