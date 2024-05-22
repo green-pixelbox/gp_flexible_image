@@ -4,6 +4,10 @@
 
 <?php $this->block('content'); ?>
 
+<?php if ($this->gpFlexibleImageVerlauf != ''): ?>
+    <div class="<?= $this->gpFlexibleImageVerlauf ?>"></div>
+<?php endif; ?>
+
 <?php $newWindow = ($this->fullsize == 1) ? true : false; ?>
 
 <?php if ($this->gpOverwriteMeta == 1): ?>

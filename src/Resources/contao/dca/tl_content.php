@@ -10,10 +10,9 @@
  * @link https://github.com/green-pixelbox/gp_flexible_image
  */
 
-$GLOBALS['TL_DCA']['tl_content']['palettes']['GPFlexibleImage'] = '{type_legend},type,headline;{source_legend},singleSRC,size,fullsize,gpOverwriteMeta,gpFlexibleImageWidthDesktop,gpFlexibleImageHeightDesktop,gpFlexibleImageHeightTablet,gpFlexibleImageHeightMobile,gpFlexibleImageObjectPositionX,gpFlexibleImageObjectPositionY;{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},cssID;{invisible_legend:hide},invisible,start,stop';
+$GLOBALS['TL_DCA']['tl_content']['palettes']['GPFlexibleImage'] = '{type_legend},type,headline;{source_legend},singleSRC,size,fullsize,gpOverwriteMeta,gpFlexibleImageWidthDesktop,gpFlexibleImageHeightDesktop,gpFlexibleImageHeightTablet,gpFlexibleImageHeightMobile,gpFlexibleImageObjectPositionX,gpFlexibleImageObjectPositionY,gpFlexibleImageVerlauf;{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},cssID;{invisible_legend:hide},invisible,start,stop';
 $GLOBALS['TL_DCA']['tl_content']['palettes']['__selector__'][] ='gpOverwriteMeta';
 $GLOBALS['TL_DCA']['tl_content']['subpalettes']['gpOverwriteMeta'] = 'alt,imageTitle,imageUrl,caption';
-
 
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['gpFlexibleImageWidthDesktop'] = array
@@ -64,4 +63,11 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['gpOverwriteMeta'] = array
     'inputType'               => 'checkbox',
     'eval'                    => array('submitOnChange'=>true, 'tl_class'=>'w50 clr'),
     'sql'                     => array('type' => 'boolean', 'default' => true)
+);
+$GLOBALS['TL_DCA']['tl_content']['fields']['gpFlexibleImageVerlauf'] = array(
+    'label'                   => &$GLOBALS['TL_LANG']['tl_content']['gpFlexibleImageVerlauf'],
+    'inputType'               => 'select',
+    'options'                 => array('gruen-von-links-nach-rechts', 'gruen-von-rechts-nach-links', 'weiss-von-links-nach-rechts', 'weiss-von-rechts-nach-links'),
+    'eval'                    => array('includeBlankOption'=>true, 'tl_class'=>'w50 clr'),
+    'sql'                     => "varchar(32) NOT NULL default ''"
 );

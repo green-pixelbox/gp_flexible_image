@@ -68,6 +68,11 @@
             <source>Die Metadaten der Datei überschreiben.</source>
             <target>Die Metadaten der Datei überschreiben.</target>
         </trans-unit>
+
+        <trans-unit id="tl_content.gpFlexibleImageVerlauf.0">
+                    <source>Verlauf über dem Bild</source>
+                    <target>Verlauf über dem Bild</target>
+        </trans-unit>
         </body>
     </file>
 </xliff>
