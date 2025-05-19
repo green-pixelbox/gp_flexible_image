@@ -60,8 +60,8 @@ class ContentGPFlexibleImage extends ContentElement
         ){
             // ist Backend User, mache ....
         }else{
-            $GLOBALS['TL_CSS'][] = $assetsDir . '/css/flexible_image.css|static';
-            $GLOBALS['TL_CSS'][] = $assetsDir . '/css/flexible_image_'.$this->id.'.css|static';
+            $GLOBALS['TL_CSS'][] = $assetsDir . '/css/flexible_image.css';
+            $GLOBALS['TL_CSS'][] = $assetsDir . '/css/flexible_image_'.$this->id.'.css';
         }
 
 		return parent::generate();
