@@ -2,7 +2,7 @@
 	"name":"green-pixelbox/gp_flexible_image",
 	"description":"Mit diesem Contao-Element kann man Bilder einfügen, deren Breite und Höhe flexibel für Desktop, Tablets und Smartphones individuell eingegeben werden können (z.B. 100px oder 100vh etc.). Das Bild wird mittels object-fit: cover in einem div platziert, der Bildausschnitt wird automatisch am div angepasst. Ein Verlauf über dem Bild ist einstellbar.",
 	"keywords":["contao","flexible","contentelements","image"],
-	"type":"contao-module",
+	"type":"contao-bundle",
 	"homepage":"http://www.green-pixelbox.de",
 	"license":"LGPL-3.0+",
 	"authors":[
@@ -25,5 +25,5 @@
 		"contao-manager-plugin": "GreenPixelbox\\GpFlexibleImage\\ContaoManager\\Plugin",
 		"contao-component-dir": "public"
 	},
-	"version": "2.1.2"
+	"version": "2.1.3"
 }
