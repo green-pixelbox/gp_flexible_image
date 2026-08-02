@@ -72,5 +72,9 @@ class ContentGPFlexibleImage extends ContentElement
 	 */
 	protected function compile()
 	{
+		if ($this->imageUrl)
+		{
+			$this->Template->imageUrl = System::getContainer()->get('contao.insert_tag.parser')->replace($this->imageUrl);
+		}
 	}
 }
